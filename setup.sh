@@ -14,7 +14,7 @@ docker run --rm -it \
   -e AWS_REGION -e AWS_ACCESS_KEY_ID \
   -e AWS_SECRET_ACCESS_KEY -e AWS_SESSION_TOKEN \
   -v $(pwd)/scripts:/scripts \
-  ghcr.io/josca/k0rdent-aws-setup:0.0.1 /scripts/setup-k0rdent-user.py $1 /scripts/$secrets_filename
+  ghcr.io/josef-hak/k0rdent-aws-setup:0.0.1 /scripts/setup-k0rdent-user.py $1 /scripts/$secrets_filename
 source ./scripts/$secrets_filename
 
 # Create k0rdent Kubernetes AWS credentials resources
